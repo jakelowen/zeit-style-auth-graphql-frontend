@@ -1,0 +1,15 @@
+# build
+.cache/
+dist/
+
+#node
+node_modules/
+
+#shhhh!
+.env
+
+#misc
+.DS_Store
+
+#yarn
+yarn-error.log
