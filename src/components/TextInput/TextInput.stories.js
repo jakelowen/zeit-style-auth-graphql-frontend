@@ -1,17 +1,7 @@
 import React from "react";
-import { storiesOf, addDecorator } from "@storybook/react";
+import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import TextInput from ".";
-import GlobalStyle from "../GlobalStyle";
-
-const GlobalStylesDecorator = storyFn => (
-  <div>
-    <GlobalStyle />
-    {storyFn()}
-  </div>
-);
-
-addDecorator(GlobalStylesDecorator);
 
 storiesOf("TextInput", module)
   .add("default", () => (

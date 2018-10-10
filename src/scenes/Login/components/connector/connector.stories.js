@@ -3,7 +3,6 @@ import { storiesOf, addDecorator } from "@storybook/react";
 import apolloStorybookDecorator from "apollo-storybook-react";
 // import { action } from "@storybook/addon-actions";
 import LoginConnector from ".";
-import GlobalStyle from "../../../../components/GlobalStyle";
 
 const typeDefs = `
 input RegisterMutationInput {
@@ -37,14 +36,6 @@ const mocks = {
   })
 };
 
-const GlobalStylesDecorator = storyFn => (
-  <div>
-    <GlobalStyle />
-    {storyFn()}
-  </div>
-);
-
-addDecorator(GlobalStylesDecorator);
 addDecorator(
   apolloStorybookDecorator({
     typeDefs,

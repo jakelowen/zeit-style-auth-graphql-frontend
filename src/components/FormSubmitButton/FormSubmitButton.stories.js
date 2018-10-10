@@ -1,16 +1,6 @@
 import React from "react";
-import { storiesOf, addDecorator } from "@storybook/react";
+import { storiesOf } from "@storybook/react";
 import FormSubmitButton from ".";
-import GlobalStyle from "../GlobalStyle";
-
-const GlobalStylesDecorator = storyFn => (
-  <div>
-    <GlobalStyle />
-    {storyFn()}
-  </div>
-);
-
-addDecorator(GlobalStylesDecorator);
 
 storiesOf("FormSubmitButton", module)
   .add("default", () => (
